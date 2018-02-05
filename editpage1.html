@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Helto</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="static/css/main.css" type="text/css">
+  <link rel="stylesheet" href="static/css/navbar.css" type="text/css">
+  <link rel="stylesheet" href="static/css/bootstrap.min.css">
+  <link href="//fonts.googleapis.com/css?family=Alike|Roboto:900" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="static/css/profile.css" type="text/css">
+  <script type="text/javascript" src="static/js/jquery.js"></script>
+  <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+   <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+
+    <style type="text/css">
+
+ .navbar {
+      margin-bottom: 0;
+      background-color:#344966;
+      z-index: 1;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+      color:#cce6ff;
+      height:60px;
+          font-weight: bold;
+          font-size: 30px;
+
+         transition: 0.4s all ease;
+
+
+
+
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #cce6ff 	 !important;
+         transition: 0.4s all ease;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color:#00b3b3  !important;
+      font-size:13px;
+      transition: 0.3s ease;
+  }
+  .navbar li:hover {
+  	border-bottom:1px solid #00b3b3;
+
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+.navbar-nav > li > a {padding-top:20px !important; padding-bottom:5px !important;}
+.navbar {min-height:32px !important}
+
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    .navbar li a, .navbar .navbar-brand {
+      color: white 	 !important;
+      background-color:#344966;
+	}
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+    .navbar li a, .navbar .navbar-brand {
+      color: white 	 !important;
+	background-color:#344966;
+	}
+</style>
+
+
+</head>
+
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" >
+
+<nav class="navbar navbar-default navbar-collapse"  >
+  <div class="container" >
+    <div class="navbar-header" >
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">BLOGS</a></li>
+        <li><a href="#">SERVICES</a></li>
+        <li><a href="#">CONTACT</a></li>
+        <li><a class="normal" href="#">LOGOUT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <div class="row">
+
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
+
+    <form action="" method="post">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title">Star-Lord</h3>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-md-3 col-lg-3 " align="center"> <img alt="User Pic" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg" id="profile-image1" class="img-circle img-responsive">
+                <input id="profile-image-upload" class="hidden" type="file">
+            </div>
+
+            <div class=" col-md-9 col-lg-9 ">
+              <table class="table table-user-information">
+                <tbody>
+                  <tr>
+                    <td>Username</td>
+                    <td><input type="text" name="username" value="Star-Lord"></td>
+                  </tr>
+                  <tr>
+                    <td>Email</td>
+                    <td><input type="text" name="email" value="Email"></td>
+                  </tr>
+                  <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="password" value="*******"></td>
+                  </tr>
+                  <tr>
+                </tbody>
+              </table>
+
+              <input type="submit" class="btn btn-primary" value="Save Changes">
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
